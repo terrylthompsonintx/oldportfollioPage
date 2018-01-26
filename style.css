@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+html {
+    background-color: #cce6ff;
+    //background-color: #EAE9E5;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    background-image: url(images/heroCropped.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+    height:950px;
+}
+article {
+    height:950px;
+}
+
+.billBoard img {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    border:0px;
+}
+h1 {
+    padding-top: 50px;
+}
+h1 {
+    font-size: 200%;
+}
+h2 {
+    font-size:175%
+}
+h3 {
+    font-size:150%
+}
+h4 {
+    font-size:125%
+}
+h1,
+h2,
+h3,
+h4,
+footer {
+    text-align: center;
+
+}
+
+img {
+    width: 100%;
+}
+@keyframes fadeIn {
+    10% {
+        opacity: .33;
+    }
+    20% {
+        opacity: .66;
+    }
+    30% {
+        opacity: .99;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-top: 10px
+}
+
+nav a:hover {
+    background-color: #9FD2ED;
+    color: aliceblue;
+}
+nav a {
+    text-decoration: none;
+}
+header {
+    text-align: right;
+    height:50px;
+    position:fixed;
+    opacity: 1;
+    background-color:#cce6ff;
+}
+
+footer li {
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+footer li img {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    width: auto;
+    max-height: 30px;
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid;
+
+}
+
+#projects img {
+    margin-top: 10px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects ul {
+    vertical-align: middle;
+    list-style: inside;
+}
+
+a:visited {
+    color: black;
+}
+
+
+
+.stackBox{
+    min-height: 100px;
+}
+.stackBox ul{
+    text-align: center;
+    height: 130px;
+    }
+
+
+
+
+
+
+article {
+  padding-top: 50px;
+}
+.projectsBox {
+    min-height: 250px;
+}
