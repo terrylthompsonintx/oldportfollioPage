@@ -22,12 +22,33 @@ html {
     //background-color: #EAE9E5;
     vertical-align: middle;
     font-family: 'Roboto', sans-serif;
+
+}
+.navbar {
+    display: inline-block;
+}
+.wrapper {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+header {
+    text-align: right;
+    position:fixed;
+    opacity: 1;
+    background-color:#cce6ff;
+    width:100%;
+    display: inline-block;
+    top: 0;
 }
 
 .hero {
     background-image: url(images/heroCropped.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    width:100%;
     color: aliceblue;
     height:950px;
 }
@@ -36,17 +57,13 @@ article {
 }
 
 .billBoard img {
-    animation-name: fadeIn;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 3s;
-    border:0px;
+      border:0px;
 }
-h1 {
-    padding-top: 50px;
-}
+
 h1 {
     font-size: 200%;
+    font-family: 'Supermercado One', cursive;
+    text-align: left;
 }
 h2 {
     font-size:175%
@@ -57,18 +74,16 @@ h3 {
 h4 {
     font-size:125%
 }
-h1,
+
 h2,
 h3,
 h4,
 footer {
     text-align: center;
-
+    font-family: 'Supermercado One', cursive;
 }
 
-img {
-    width: 100%;
-}
+
 @keyframes fadeIn {
     10% {
         opacity: .33;
@@ -88,7 +103,8 @@ nav li {
     display: inline-block;
     text-decoration: none;
     padding-left: 5px;
-    padding-top: 10px
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 nav a:hover {
@@ -98,13 +114,7 @@ nav a:hover {
 nav a {
     text-decoration: none;
 }
-header {
-    text-align: right;
-    height:50px;
-    position:fixed;
-    opacity: 1;
-    background-color:#cce6ff;
-}
+
 
 footer li {
     display: inline-block;
@@ -122,11 +132,12 @@ footer li img {
     margin-bottom: 20px;
 }
 
-img {
+.colpic {
     border-radius: 15px;
     margin-right: auto;
     margin-left: auto;
     border: 2px solid;
+    width: 100%;
 
 }
 

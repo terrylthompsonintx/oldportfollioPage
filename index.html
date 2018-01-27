@@ -6,32 +6,34 @@
     <title>Terry Thompson Portfollio</title>
     <link rel="stylesheet" href="rows.css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class='col-12'>
-        <nav class='navBar'>
-
+    <header >
+        <nav class='navBar wrapper'>
+            <h1>Terry Thompson</h1>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#techSecton"> Technologies</a></li>
-                <li><a href="#contact">Contact</a> </li>
+
             </ul>
         </nav>
 
     </header>
-    <article class='hero col-12'>
-        <h1>Terry Thompson</h1>
-        <h2>M.E.R.N Web Stack Developer</h2>
+    <article class='hero'>
+
+        <h2> Web Developer</h2>
+        <h2><a href="#contact"><i class="fa fa-address-card" aria-hidden="true"></i>Contact</a> </h2>
     </article>
-    <article class='col-12' id='about'>
+    <article class='col-12 wrapper' id='about'>
         <h2>About Me</h2>
 
-        <div class='col-3 centerItem'><img src="images/20160205_075822.jpg" alt="Picture of Terry Thompson"></div>
+        <div class='col-3 centerItem'><img class = 'colpic' src="images/20160205_075822.jpg" alt="Picture of Terry Thompson"></div>
         <div class='col-9 centerItem'>
             <p>I am a recent graduate of the Thinkful Online Web Developement program. </p>
             <p>I have a background of increasing responsibility in complex computer technology fields with past positions including support, SAN and Network Administration, as well as technical writing. My work history can be viewed on my Linked In page which is linked at the bottom of this page. </p>
@@ -39,11 +41,11 @@
         </div>
 
     </article>
-    <article class='col-12' id='projects'>
-        <h2>Past Projects</h2>
+    <article class='col-12 wrapper' id='projects'>
+        <h2>Projects</h2>
 
         <div class='col-4'>
-            <a href="https://github.com/terrylthompsonintx/shopping-list-full-stack-capstone"><img src="images/cap1.png" alt="Capstone One"></a>
+            <a href="https://github.com/terrylthompsonintx/shopping-list-full-stack-capstone"><img class = 'colpic' src="images/cap1.png" alt="Capstone One"></a>
             <div class='projectsBox'>
                 <div class='stackBox'>
                    <h2>Cooking is cool</h2>
@@ -70,7 +72,7 @@
             </div>
         </div>
         <div class='col-4'>
-            <a href="https://github.com/terrylthompsonintx/youtube-googlebooks-meetup-learn-coding-capstone"> <img src="images/cap2.PNG" alt="Capstone Two"></a>
+            <a href="https://github.com/terrylthompsonintx/youtube-googlebooks-meetup-learn-coding-capstone"> <img class = 'colpic' src="images/cap2.PNG" alt="Capstone Two"></a>
             <div class='projectsBox'>
                 <div class='stackBox'>
                    <h2>Code Home</h2>
@@ -88,7 +90,7 @@
             </div>
         </div>
         <div class='col-4'>
-            <a href="https://terrylthompsonintx.github.io/youtube-notes-full-stack-capstone-react/build"><img src="images/editnote.png" alt="YouNotes"></a>
+            <a href="https://terrylthompsonintx.github.io/youtube-notes-full-stack-capstone-react/build"><img class = 'colpic' src="images/editnote.png" alt="YouNotes"></a>
 
             <div class='projectsBox'>
                 <div class='stackBox'>
@@ -112,10 +114,10 @@
         </div>
 
     </article>
-    <article class='col-12' id='techSecton'>
+    <article class='col-12 wrapper' id='techSecton'>
         <h2>Technologies/Skills</h2>
 
-        <div class='billBoard col-3'><img id='pic1' src="images/pic1.png" height='100px'alt="Images of technology logo"> </div>
+        <div class='billBoard col-3'><img id='pic1' src="images/marquee.gif" width='100px' height='100px' alt="Images of technology logo"> </div>
         <div class='col-9'>
            <p>I have developed projects in the M.E.R.N stack.  </p>
             <p>MERN is a set of Open Source components that together, provide an end-to-end framework for building dynamic web applications; starting from the top (code running in the browser) to the bottom (database). The stack is made up of:</p>
@@ -131,7 +133,7 @@
          </div>
 
     </article>
-    <footer class='col-12' id='contact'>
+    <footer class='col-12 wrapper' id='contact'>
         <h2>Contact</h2>
 
         <p>&copy;Terry Thompson</p>
@@ -151,7 +153,7 @@
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="client.js"></script>
+    <!-- <script src="client.js"></script> -->
 </body>
 
 </html>
