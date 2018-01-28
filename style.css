@@ -52,6 +52,9 @@ header {
     color: aliceblue;
     height:950px;
 }
+.hero h4{
+    color: aliceblue;
+}
 article {
     margin-top: auto;
     height:950px;
