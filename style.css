@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 101%;
     /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
     box-sizing: border-box;
     /*reset Chrome user agent styles*/
@@ -18,7 +18,7 @@
 
 
 html {
-    background-color: #cce6ff;
+
 
     vertical-align: middle;
     font-family: 'Roboto', sans-serif;
@@ -37,7 +37,7 @@ header {
 
     position:fixed;
     opacity: 1;
-    background-color:#cce6ff;
+    background-color:#ffffff;
     width:100%;
     display: inline-block;
     top: 0;
@@ -146,7 +146,9 @@ footer li img {
     width: 100%;
 
 }
-
+#projects {
+    background-color: #fcfcfc;
+}
 #projects img {
     margin-top: 10px;
     border: 1px solid;
@@ -156,7 +158,7 @@ footer li img {
 
 #projects ul {
     vertical-align: middle;
-    list-style: inside;
+    list-style: none;
 }
 
 
@@ -191,5 +193,13 @@ p{
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+}
+
+.centerItem  {
+
+padding-top: 120px;
+    display: table-cell;
+    vertical-align: middle;
 
 }
