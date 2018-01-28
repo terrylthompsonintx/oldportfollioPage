@@ -19,7 +19,7 @@
 
 html {
     background-color: #cce6ff;
-    //background-color: #EAE9E5;
+
     vertical-align: middle;
     font-family: 'Roboto', sans-serif;
 
@@ -34,7 +34,7 @@ html {
     width:80%;
 }
 header {
-    text-align: right;
+
     position:fixed;
     opacity: 1;
     background-color:#cce6ff;
@@ -53,7 +53,9 @@ header {
     height:950px;
 }
 article {
+    margin-top: auto;
     height:950px;
+    margin-bottom: auto;
 }
 
 .billBoard img {
@@ -63,7 +65,7 @@ article {
 h1 {
     font-size: 200%;
     font-family: 'Supermercado One', cursive;
-    text-align: left;
+    float: left;
 }
 h2 {
     font-size:175%
@@ -100,6 +102,7 @@ footer {
 }
 
 nav li {
+    float:right;
     display: inline-block;
     text-decoration: none;
     padding-left: 5px;
@@ -107,12 +110,15 @@ nav li {
     padding-bottom: 1rem;
 }
 
-nav a:hover {
+ a:hover {
     background-color: #9FD2ED;
     color: aliceblue;
 }
-nav a {
+a {
     text-decoration: none;
+}
+a:visited {
+    color: black;
 }
 
 
@@ -153,9 +159,6 @@ footer li img {
     list-style: inside;
 }
 
-a:visited {
-    color: black;
-}
 
 
 
@@ -167,14 +170,26 @@ a:visited {
     height: 130px;
     }
 
-
-
-
-
-
 article {
   padding-top: 50px;
+    transition: 2s;
 }
 .projectsBox {
     min-height: 250px;
+}
+.herotext{
+    margin-top: 50px;
+}
+p{
+    margin-bottom: 5px;
+}
+#techPics {
+    text-align: center;
+}
+#techPics li{
+    display:inline-block;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
