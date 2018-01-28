@@ -89,6 +89,7 @@ footer {
 }
 
 
+
 @keyframes fadeIn {
     10% {
         opacity: .33;
@@ -128,7 +129,9 @@ a:visited {
 footer li {
     display: inline-block;
     text-decoration: none;
-    padding-top: 30px;
+    padding-top: 10px;
+    font-size:200%;
+    padding-bottom: 30px;
 }
 
 footer li img {
@@ -188,10 +191,10 @@ article {
 p{
     margin-bottom: 5px;
 }
-#techPics {
+.techPics {
     text-align: center;
 }
-#techPics li{
+.techPics li{
     display:inline-block;
     padding-left: 40px;
     padding-top: 20px;
