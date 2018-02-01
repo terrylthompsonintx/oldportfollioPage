@@ -17,52 +17,28 @@
 }
 
 
+/* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
 html {
-
-
     vertical-align: middle;
     font-family: 'Roboto', sans-serif;
-
-}
-.navbar {
-    display: inline-block;
-}
-.wrapper {
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-    width:80%;
-}
-header {
-
-    position:fixed;
-    opacity: 1;
-    background-color:#ffffff;
-    width:100%;
-    display: inline-block;
-    top: 0;
 }
 
-.hero {
-    background-image: url(images/heroCropped.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width:100%;
-    color: aliceblue;
-    height:950px;
+a {
+    text-decoration: none;
+    color: black;
 }
-.hero h4{
+
+a:hover {
+    background-color: #9FD2ED;
     color: aliceblue;
 }
-article {
-    margin-top: auto;
-    height:950px;
-    margin-bottom: auto;
-}
 
-.billBoard img {
-      border:0px;
+a:visited {
+    color: black;
 }
 
 h1 {
@@ -70,15 +46,194 @@ h1 {
     font-family: 'Supermercado One', cursive;
     float: left;
 }
+
 h2 {
-    font-size:175%
+    font-size: 175%
 }
+
 h3 {
-    font-size:150%
+    font-size: 150%
 }
+
 h4 {
-    font-size:125%
+    font-size: 125%
 }
+
+p {
+    margin-bottom: 5px;
+}
+
+.wrapper {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    float: none;
+    clear: both;
+    display: block;
+}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+header {
+    position: fixed;
+    opacity: 1;
+    background-color: #ffffff;
+    width: 100%;
+    display: inline-block;
+    top: 0;
+}
+
+header .wrapper {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+nav li {
+    float: right;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+article {
+    padding-top: 50px;
+    transition: 2s;
+}
+
+.hero {
+    background-image: url(images/heroCropped.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    color: aliceblue;
+    height: 950px;
+}
+
+.herotext {
+    display: block;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.herotext img {
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.contactIcon a {
+    color: aliceblue;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid aliceblue;
+    margin-top: 5rem;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.contactIcon a:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.contactIcon a i {
+    margin-right: 1rem;
+}
+
+.colpic {
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid;
+    width: 100%;
+}
+
+#projects {
+    background-color: #fcfcfc;
+}
+
+#projects img {
+    margin-top: 10px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects ul {
+    vertical-align: middle;
+    list-style: none;
+}
+
+#projects .projectSkill {
+    width: auto;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#projects .projectSkill:hover {
+    background-color: #0070BB;
+    color: white;
+}
+
+#projects .stackBox {
+    min-height: 100px;
+}
+
+#projects .stackBox ul {
+    text-align: center;
+    height: 130px;
+}
+
+#projects .projectsBox {
+    min-height: 250px;
+}
+
+#projects .centerItem {
+    padding-top: 9%;
+}
+
+#techSection .techPics li {
+    display: inline-block;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#techSection ul {
+    text-align: center;
+}
+
+.mern li {
+    text-align: left;
+    list-style-position: inside;
+}
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
 
 h2,
 h3,
@@ -88,49 +243,11 @@ footer {
     font-family: 'Supermercado One', cursive;
 }
 
-
-
-@keyframes fadeIn {
-    10% {
-        opacity: .33;
-    }
-    20% {
-        opacity: .66;
-    }
-    30% {
-        opacity: .99;
-    }
-    40% {
-        opacity: 1;
-    }
-}
-
-nav li {
-    float:right;
-    display: inline-block;
-    text-decoration: none;
-    padding-left: 5px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
- a:hover {
-    background-color: #9FD2ED;
-    color: aliceblue;
-}
-a {
-    text-decoration: none;
-}
-a:visited {
-    color: black;
-}
-
-
 footer li {
     display: inline-block;
     text-decoration: none;
     padding-top: 10px;
-    font-size:200%;
+    font-size: 200%;
     padding-bottom: 30px;
 }
 
@@ -144,68 +261,10 @@ footer li img {
     margin-bottom: 20px;
 }
 
-.colpic {
-    border-radius: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 2px solid;
-    width: 100%;
 
-}
-#projects {
-    background-color: #fcfcfc;
-}
-#projects img {
-    margin-top: 10px;
-    border: 1px solid;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#projects ul {
-    vertical-align: middle;
-    list-style: none;
-}
-
-
-
-
-.stackBox{
-    min-height: 100px;
-}
-.stackBox ul{
-    text-align: center;
-    height: 130px;
-    }
-
-article {
-  padding-top: 50px;
-    transition: 2s;
-}
-.projectsBox {
-    min-height: 250px;
-}
-.herotext{
-    margin-top: 50px;
-}
-p{
-    margin-bottom: 5px;
-}
-.techPics {
-    text-align: center;
-}
-.techPics li{
-    display:inline-block;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-
-.centerItem  {
-
-padding-top: 120px;
-    display: table-cell;
-    vertical-align: middle;
-
-}
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles below this line
+*/

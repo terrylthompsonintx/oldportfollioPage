@@ -1,16 +1,21 @@
 * {
-/*
     margin: 0;
     padding: 0;
     border: 0;
-*/
+    font-size: 101%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
     box-sizing: border-box;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 0;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
 }
+
 
 
 /* Grid measurements:
@@ -50,8 +55,8 @@
 .col-4,
 .col-6,
 .col-9 {
-    /*    display: inline-block;*/
-    float: left;
+       display: inline-block;
+    /*float: left; */
     /* Gutters:
     * Each column is padded by half-a-gutter on each side,
     *
@@ -60,6 +65,7 @@
     */
     padding-left: 1.04166666%;
     padding-right: 1.04166666%;
+    vertical-align: top;
 }
 
 .col-12 {
@@ -92,18 +98,18 @@
 @media only screen and (min-width: 640px) {
     /* 3 columns, 3/12 in % */
     .col-3 {
-        width: 25%;
+        width: 24%;
     }
     /* 4 columns, 4/12 in % */
     .col-4 {
-        width: 33.333333%;
+        width: 32.333333%;
     }
     /* 6 columns, 6/12 in % */
     .col-6 {
-        width: 50%;
+        width: 49%;
     }
     .col-9 {
-        width: 75%
+        width: 74%
     }
     /* 12 columns, 12/12 in % */
     .col-12 {
